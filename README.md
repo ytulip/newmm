@@ -1,2 +1,1 @@
-# newmm
-mm's new web
+# this is a php construct for tianmingming, for your kindness

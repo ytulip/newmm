@@ -1,0 +1,542 @@
+<?php
+
+/* index/work.html */
+class __TwigTemplate_de5089ccff8615f4a6f655013d237392247c9999607dac3a3a30b19f6ce314ba extends Twig_Template
+{
+    public function __construct(Twig_Environment $env)
+    {
+        parent::__construct($env);
+
+        // line 1
+        $this->parent = $this->loadTemplate("_layout/index_new.html", "index/work.html", 1);
+        $this->blocks = array(
+            'style' => array($this, 'block_style'),
+            'pageTitle' => array($this, 'block_pageTitle'),
+            'body' => array($this, 'block_body'),
+            'script' => array($this, 'block_script'),
+        );
+    }
+
+    protected function doGetParent(array $context)
+    {
+        return "_layout/index_new.html";
+    }
+
+    protected function doDisplay(array $context, array $blocks = array())
+    {
+        $this->parent->display($context, array_merge($this->blocks, $blocks));
+    }
+
+    // line 2
+    public function block_style($context, array $blocks = array())
+    {
+        // line 3
+        echo "<style>
+
+    @media only screen and (max-width: 3800px) {
+        .sandbox-content {
+            padding-left: 1130px;
+            padding-right: 1130px;
+        }
+    }
+
+
+    @media only screen and (max-width: 2400px) {
+        .sandbox-content {
+            padding-left: 650px;
+            padding-right: 650px;
+        }
+    }
+
+
+    @media only screen and (max-width: 1600px) {
+        .sandbox-content {
+            padding-left: 300px;
+            padding-right: 300px;
+        }
+    }
+
+
+
+
+    @media only screen and (max-width: 1200px) {
+        .sandbox-content {
+            padding-left: 150px;
+            padding-right: 150px;
+        }
+    }
+
+
+    @media only screen and (max-width: 768px) {
+        .sandbox-content {
+            padding-left: 80px;
+            padding-right: 80px;
+        }
+
+        .works-list > div{
+            display: inline-block;
+            width: 50%;
+            padding-bottom: calc( 50% * 0.79 );
+            position: relative;
+        }
+    }
+
+
+    @media only screen and (max-width: 540px) {
+
+        .works-list > div{
+            display: inline-block;
+            width: 100%;
+            padding-bottom: calc( 100% * 0.79 );
+            position: relative;
+        }
+
+        .sandbox{
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        .sandbox-content {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    }
+
+
+    .img-show{
+        width: 100%;
+    }
+
+    .work-detail p{
+        font-size: 16px;
+    }
+
+    .img-show-item{
+        margin-bottom: 7px;
+    }
+
+    .img-show-item img{
+        width: 100%;
+    }
+
+    .veil ul li:nth-child(3) a{
+        color:#FFD48B;
+    }
+
+    .works-type li:nth-child(";
+        // line 94
+        echo twig_escape_filter($this->env, (isset($context["type"]) ? $context["type"] : null), "html", null, true);
+        echo ") a{
+        color:#FFD48B;
+    }
+
+    h2{
+        font-size: 24px;
+    }
+
+</style>
+";
+    }
+
+    // line 104
+    public function block_pageTitle($context, array $blocks = array())
+    {
+        echo "<div style=\"text-align: center;\"><span style=\"line-height: 34px;font-size: 26px;font-family: FZLTXHB--B51-0;color: #333333;\"></span></div>";
+    }
+
+    // line 105
+    public function block_body($context, array $blocks = array())
+    {
+        // line 106
+        echo "
+<div class=\"m-padding\">
+    <img class=\"only-m\" src=\"";
+        // line 108
+        echo twig_escape_filter($this->env, (isset($context["banner_img"]) ? $context["banner_img"] : null), "html", null, true);
+        echo "\" style=\"width: 100%;\"/>
+
+    <!--<div class=\"only-p\" style=\"height: 600px;background-image: url( ";
+        // line 110
+        echo twig_escape_filter($this->env, (isset($context["banner_img"]) ? $context["banner_img"] : null), "html", null, true);
+        echo " );background-size:auto 600px;background-repeat: no-repeat;    background-position: center center;\">-->
+    <!--<div class=\"only-p\" style=\"height: 600px;\">-->
+        <!--<div style=\"height: 600px;background-image: url( ";
+        // line 112
+        echo twig_escape_filter($this->env, (isset($context["banner_img"]) ? $context["banner_img"] : null), "html", null, true);
+        echo " );background-size:auto 600px;background-repeat: no-repeat;    background-position: center center;position: fixed;top:122px;left: 0;right: 0;z-index:-1;\"></div>-->
+    <!--</div>-->
+    <!--<div class=\"only-p\" style=\"height: 600px;\">-->
+        <!--<div style=\"height: 600px;background-image: url( ";
+        // line 115
+        echo twig_escape_filter($this->env, (isset($context["banner_img"]) ? $context["banner_img"] : null), "html", null, true);
+        echo " );background-size:auto 600px;background-repeat: no-repeat;    background-position: center center;position: fixed;top:122px;left: 0;right: 0;z-index:-1;\"></div>-->
+    <!--</div>-->
+    <div class=\"only-p\" style=\"position: fixed;top:122px;left: 0;right: 0;z-index:-1;\">
+        <div class=\"img-show-panel\" style=\"position: absolute;width: 100%;padding-bottom: calc( 100% * 0.79 );\">
+            <img src=\"";
+        // line 119
+        echo twig_escape_filter($this->env, (isset($context["banner_img"]) ? $context["banner_img"] : null), "html", null, true);
+        echo "\"/>
+        </div>
+    </div>
+
+</div>
+
+<div class=\"only-p\" style=\"padding-bottom: calc( 100% * 0.79 * 0.45);\">
+
+</div>
+
+<div class=\"common-padding padding-60-30\" style=\"background-color: #ffffff;\">
+
+    <div class=\"in-bl-line easy-l\">
+        <div class=\"in-bl-line-item response-free-width2 v-a-t\">
+            <div class=\"font-h1\">";
+        // line 133
+        echo twig_escape_filter($this->env, (isset($context["title"]) ? $context["title"] : null), "html", null, true);
+        echo "</div>
+            <div class=\"font-h2\" style=\"margin-top: 16px;\">";
+        // line 134
+        echo twig_escape_filter($this->env, (isset($context["abstract"]) ? $context["abstract"] : null), "html", null, true);
+        echo "</div>
+        </div>
+        <div class=\"in-bl-line-item response-free-width2 v-a-t\">
+            <div class=\"font-p\">";
+        // line 137
+        echo nl2br(twig_escape_filter($this->env, (isset($context["describe"]) ? $context["describe"] : null), "html", null, true));
+        echo "</div>
+        </div>
+    </div>
+
+    ";
+        // line 141
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable((isset($context["lineItems"]) ? $context["lineItems"] : null));
+        foreach ($context['_seq'] as $context["_key"] => $context["line"]) {
+            // line 142
+            echo "        <div class=\"in-bl-line easy-l\">
+            ";
+            // line 143
+            $context['_parent'] = $context;
+            $context['_seq'] = twig_ensure_traversable($context["line"]);
+            foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
+                // line 144
+                echo "                ";
+                if (($this->getAttribute($context["item"], "type", array(), "array") == 1)) {
+                    // line 145
+                    echo "                    <div class=\"in-bl-line-item response-free-width";
+                    echo twig_escape_filter($this->env, $this->getAttribute($context["item"], "width_type", array(), "array"), "html", null, true);
+                    echo " v-a-t\">
+                        <div class=\"img-show-panel\">
+                            <img src=\"";
+                    // line 147
+                    echo twig_escape_filter($this->env, $this->getAttribute($context["item"], "content", array(), "array"), "html", null, true);
+                    echo "\" style=\"width:100%;\"/>
+                        </div>
+                    </div>
+                ";
+                }
+                // line 151
+                echo "
+                ";
+                // line 152
+                if (($this->getAttribute($context["item"], "type", array(), "array") == 2)) {
+                    // line 153
+                    echo "                    <div class=\"in-bl-line-item response-free-width";
+                    echo twig_escape_filter($this->env, $this->getAttribute($context["item"], "width_type", array(), "array"), "html", null, true);
+                    echo " v-a-t\">
+                        <p class=\"font-p p-t-30-0\">";
+                    // line 154
+                    echo nl2br(twig_escape_filter($this->env, $this->getAttribute($context["item"], "content", array(), "array"), "html", null, true));
+                    echo "</p>
+                    </div>
+                ";
+                }
+                // line 157
+                echo "            ";
+            }
+            $_parent = $context['_parent'];
+            unset($context['_seq'], $context['_iterated'], $context['_key'], $context['item'], $context['_parent'], $context['loop']);
+            $context = array_intersect_key($context, $_parent) + $_parent;
+            // line 158
+            echo "        </div>
+    ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['line'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 160
+        echo "
+
+
+    <div class=\"opr-line easy-l ov-hid\" style=\"margin-bottom: 100px;\">
+        ";
+        // line 164
+        if ((isset($context["prev"]) ? $context["prev"] : null)) {
+            // line 165
+            echo "            <a href=\"/work?id=";
+            echo twig_escape_filter($this->env, (isset($context["prev"]) ? $context["prev"] : null), "html", null, true);
+            echo "\">上一项目</a>
+        ";
+        }
+        // line 167
+        echo "        ";
+        if ((isset($context["next"]) ? $context["next"] : null)) {
+            // line 168
+            echo "            <a style=\"float: right;\" href=\"/work?id=";
+            echo twig_escape_filter($this->env, (isset($context["next"]) ? $context["next"] : null), "html", null, true);
+            echo "\">下一项目</a>
+        ";
+        }
+        // line 170
+        echo "    </div>
+</div>
+";
+    }
+
+    // line 173
+    public function block_script($context, array $blocks = array())
+    {
+        // line 174
+        echo "<script src=\"/public/assets/js/imgLiquid.js\"></script>
+<script>
+
+//    \$(function(){
+//        videojs('v-h-mp4',{
+//            fluid: true,
+//            controls:true,
+//        });
+//    });
+
+    \$(\".img-show-panel\").imgLiquid();
+
+
+    function getQueryString(name) {
+        var reg = new RegExp(\"(^|&)\" + name + \"=([^&]*)(&|\$)\", \"i\");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return unescape(r[2]); return null;
+    }
+
+
+    /*加载works*/
+
+
+
+
+</script>
+";
+    }
+
+    public function getTemplateName()
+    {
+        return "index/work.html";
+    }
+
+    public function isTraitable()
+    {
+        return false;
+    }
+
+    public function getDebugInfo()
+    {
+        return array (  299 => 174,  296 => 173,  290 => 170,  284 => 168,  281 => 167,  275 => 165,  273 => 164,  267 => 160,  260 => 158,  254 => 157,  248 => 154,  243 => 153,  241 => 152,  238 => 151,  231 => 147,  225 => 145,  222 => 144,  218 => 143,  215 => 142,  211 => 141,  204 => 137,  198 => 134,  194 => 133,  177 => 119,  170 => 115,  164 => 112,  159 => 110,  154 => 108,  150 => 106,  147 => 105,  141 => 104,  127 => 94,  34 => 3,  31 => 2,  11 => 1,);
+    }
+}
+/* {% extends "_layout/index_new.html" %}*/
+/* {% block style%}*/
+/* <style>*/
+/* */
+/*     @media only screen and (max-width: 3800px) {*/
+/*         .sandbox-content {*/
+/*             padding-left: 1130px;*/
+/*             padding-right: 1130px;*/
+/*         }*/
+/*     }*/
+/* */
+/* */
+/*     @media only screen and (max-width: 2400px) {*/
+/*         .sandbox-content {*/
+/*             padding-left: 650px;*/
+/*             padding-right: 650px;*/
+/*         }*/
+/*     }*/
+/* */
+/* */
+/*     @media only screen and (max-width: 1600px) {*/
+/*         .sandbox-content {*/
+/*             padding-left: 300px;*/
+/*             padding-right: 300px;*/
+/*         }*/
+/*     }*/
+/* */
+/* */
+/* */
+/* */
+/*     @media only screen and (max-width: 1200px) {*/
+/*         .sandbox-content {*/
+/*             padding-left: 150px;*/
+/*             padding-right: 150px;*/
+/*         }*/
+/*     }*/
+/* */
+/* */
+/*     @media only screen and (max-width: 768px) {*/
+/*         .sandbox-content {*/
+/*             padding-left: 80px;*/
+/*             padding-right: 80px;*/
+/*         }*/
+/* */
+/*         .works-list > div{*/
+/*             display: inline-block;*/
+/*             width: 50%;*/
+/*             padding-bottom: calc( 50% * 0.79 );*/
+/*             position: relative;*/
+/*         }*/
+/*     }*/
+/* */
+/* */
+/*     @media only screen and (max-width: 540px) {*/
+/* */
+/*         .works-list > div{*/
+/*             display: inline-block;*/
+/*             width: 100%;*/
+/*             padding-bottom: calc( 100% * 0.79 );*/
+/*             position: relative;*/
+/*         }*/
+/* */
+/*         .sandbox{*/
+/*             padding-left: 5px;*/
+/*             padding-right: 5px;*/
+/*         }*/
+/*         .sandbox-content {*/
+/*             padding-left: 5px;*/
+/*             padding-right: 5px;*/
+/*         }*/
+/*     }*/
+/* */
+/* */
+/*     .img-show{*/
+/*         width: 100%;*/
+/*     }*/
+/* */
+/*     .work-detail p{*/
+/*         font-size: 16px;*/
+/*     }*/
+/* */
+/*     .img-show-item{*/
+/*         margin-bottom: 7px;*/
+/*     }*/
+/* */
+/*     .img-show-item img{*/
+/*         width: 100%;*/
+/*     }*/
+/* */
+/*     .veil ul li:nth-child(3) a{*/
+/*         color:#FFD48B;*/
+/*     }*/
+/* */
+/*     .works-type li:nth-child({{ type }}) a{*/
+/*         color:#FFD48B;*/
+/*     }*/
+/* */
+/*     h2{*/
+/*         font-size: 24px;*/
+/*     }*/
+/* */
+/* </style>*/
+/* {% endblock %}*/
+/* {% block pageTitle %}<div style="text-align: center;"><span style="line-height: 34px;font-size: 26px;font-family: FZLTXHB--B51-0;color: #333333;"></span></div>{% endblock %}*/
+/* {% block body %}*/
+/* */
+/* <div class="m-padding">*/
+/*     <img class="only-m" src="{{ banner_img }}" style="width: 100%;"/>*/
+/* */
+/*     <!--<div class="only-p" style="height: 600px;background-image: url( {{ banner_img }} );background-size:auto 600px;background-repeat: no-repeat;    background-position: center center;">-->*/
+/*     <!--<div class="only-p" style="height: 600px;">-->*/
+/*         <!--<div style="height: 600px;background-image: url( {{ banner_img }} );background-size:auto 600px;background-repeat: no-repeat;    background-position: center center;position: fixed;top:122px;left: 0;right: 0;z-index:-1;"></div>-->*/
+/*     <!--</div>-->*/
+/*     <!--<div class="only-p" style="height: 600px;">-->*/
+/*         <!--<div style="height: 600px;background-image: url( {{ banner_img }} );background-size:auto 600px;background-repeat: no-repeat;    background-position: center center;position: fixed;top:122px;left: 0;right: 0;z-index:-1;"></div>-->*/
+/*     <!--</div>-->*/
+/*     <div class="only-p" style="position: fixed;top:122px;left: 0;right: 0;z-index:-1;">*/
+/*         <div class="img-show-panel" style="position: absolute;width: 100%;padding-bottom: calc( 100% * 0.79 );">*/
+/*             <img src="{{ banner_img }}"/>*/
+/*         </div>*/
+/*     </div>*/
+/* */
+/* </div>*/
+/* */
+/* <div class="only-p" style="padding-bottom: calc( 100% * 0.79 * 0.45);">*/
+/* */
+/* </div>*/
+/* */
+/* <div class="common-padding padding-60-30" style="background-color: #ffffff;">*/
+/* */
+/*     <div class="in-bl-line easy-l">*/
+/*         <div class="in-bl-line-item response-free-width2 v-a-t">*/
+/*             <div class="font-h1">{{ title }}</div>*/
+/*             <div class="font-h2" style="margin-top: 16px;">{{ abstract }}</div>*/
+/*         </div>*/
+/*         <div class="in-bl-line-item response-free-width2 v-a-t">*/
+/*             <div class="font-p">{{ describe | nl2br }}</div>*/
+/*         </div>*/
+/*     </div>*/
+/* */
+/*     {% for line in lineItems %}*/
+/*         <div class="in-bl-line easy-l">*/
+/*             {% for item in line %}*/
+/*                 {% if item['type'] == 1 %}*/
+/*                     <div class="in-bl-line-item response-free-width{{item['width_type']}} v-a-t">*/
+/*                         <div class="img-show-panel">*/
+/*                             <img src="{{item['content']}}" style="width:100%;"/>*/
+/*                         </div>*/
+/*                     </div>*/
+/*                 {% endif %}*/
+/* */
+/*                 {% if item['type'] == 2 %}*/
+/*                     <div class="in-bl-line-item response-free-width{{item['width_type']}} v-a-t">*/
+/*                         <p class="font-p p-t-30-0">{{ item['content'] | nl2br }}</p>*/
+/*                     </div>*/
+/*                 {% endif %}*/
+/*             {% endfor %}*/
+/*         </div>*/
+/*     {% endfor %}*/
+/* */
+/* */
+/* */
+/*     <div class="opr-line easy-l ov-hid" style="margin-bottom: 100px;">*/
+/*         {% if prev %}*/
+/*             <a href="/work?id={{ prev }}">上一项目</a>*/
+/*         {% endif %}*/
+/*         {% if next %}*/
+/*             <a style="float: right;" href="/work?id={{ next }}">下一项目</a>*/
+/*         {% endif %}*/
+/*     </div>*/
+/* </div>*/
+/* {% endblock %}*/
+/* {% block script %}*/
+/* <script src="/public/assets/js/imgLiquid.js"></script>*/
+/* <script>*/
+/* */
+/* //    $(function(){*/
+/* //        videojs('v-h-mp4',{*/
+/* //            fluid: true,*/
+/* //            controls:true,*/
+/* //        });*/
+/* //    });*/
+/* */
+/*     $(".img-show-panel").imgLiquid();*/
+/* */
+/* */
+/*     function getQueryString(name) {*/
+/*         var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");*/
+/*         var r = window.location.search.substr(1).match(reg);*/
+/*         if (r != null) return unescape(r[2]); return null;*/
+/*     }*/
+/* */
+/* */
+/*     /*加载works*//* */
+/* */
+/* */
+/* */
+/* */
+/* </script>*/
+/* {% endblock %}*/
