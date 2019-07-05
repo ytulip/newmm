@@ -402,7 +402,7 @@
                             $(".img-wrapper").imgLiquid();
                         }else if(data.type == 2){
 
-                            $('#work-img-add').before('<div class="work-img-box-container"><div class="work-img-box"><img src="'+data.path+'"/></div><div class="work-img-opr"><a onclick="changeWidth(this)" style="display: table-cell;vertical-align: middle;text-align: right;" class="width-opr">宽度100%</a><a onclick="openAddMember(this)" class="text-opr" style="display: table-cell;vertical-align: middle;text-align: right;"><i class="fa fa-edit"></i>前置文本</a><a onclick="deleteWork(this)" style="display: table-cell;vertical-align: middle;text-align: right;"><i class="fa fa-remove"></i>删除</a></div></div>');
+                            $('#work-img-add').before('<div class="work-img-box-container"><div class="work-img-box"><img src="'+data.path+'"/></div><div class="work-img-opr"><a onclick="changeWidth(this)" style="display: table-cell;vertical-align: middle;text-align: right;" data-width="1" class="width-opr">宽度100%</a><a onclick="openAddMember(this)" class="text-opr" style="display: table-cell;vertical-align: middle;text-align: right;"  data-text=""><i class="fa fa-edit"></i>前置文本</a><a onclick="deleteWork(this)" style="display: table-cell;vertical-align: middle;text-align: right;"><i class="fa fa-remove"></i>删除</a></div></div>');
                             $(".work-img-box").imgLiquid();
                         } else {
                             $('#up-banner-img').html('<div style="width: 100%;height: 100%;" class="img-wrapper"><img src="'+data.path+'"/></div>');
