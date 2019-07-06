@@ -138,7 +138,7 @@ class IndexController{
             {
                 $items[] = ['type'=>2,'content'=>$texts[$key],'width_type'=>2,''];
             }
-            $items[] = ['type'=>1,'content'=>$img,'width_type'=>$widthTypes[$key]];
+            $items[] = ['type'=>1,'content'=>env('IMG_HOST') . $img,'width_type'=>$widthTypes[$key]];
         }
 
         $lineItems = [];
@@ -204,8 +204,8 @@ class IndexController{
             'describe'=>$object->describe,
             'imgs'=>$imgs,
             'imgs_type'=>$imgsType,
-            'face_img'=>$object->face_img,
-            'banner_img'=>$object->banner_img,
+            'face_img'=>env('IMG_HOST') . $object->face_img,
+            'banner_img'=>env('IMG_HOST') . $object->banner_img,
             'lineItems'=>$lineItems,
             'prev'=>isset($workList[$currentIndex - 1])?$workList[$currentIndex - 1]->id:'',
             'next'=>isset($workList[$currentIndex + 1])?$workList[$currentIndex + 1]->id:''
@@ -298,6 +298,10 @@ class IndexController{
         if( $type == 1)
         {
             $list = DB::select('select * from work where is_home = 1 order by power asc,id desc');
+            foreach ( $list as $key=>$item )
+            {
+                $list[$key]->face_img = env('IMG_HOST') . $item->face_img;
+            }
             echo json_encode(array('status'=>true,'data'=>$list));
             exit;
         }
@@ -308,6 +312,17 @@ class IndexController{
         }else{
             $list = DB::select('select * from work order by power asc,id desc');
         }
+
+
+
+
+        //处理face_img
+        foreach ( $list as $key=>$item )
+        {
+            $list[$key]->face_img = env('IMG_HOST') . $item->face_img;
+        }
+
+
         echo json_encode(array('status'=>true,'data'=>$list));
         exit;
 //        $type = IndexController::input('type');
