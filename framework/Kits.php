@@ -66,10 +66,10 @@ class Kits{
         switch ( $type )
         {
             case 2:
-                $text = '产品设计';
+                $text = 'UI';
                 break;
             case 3:
-                $text = '交互与视觉设计';
+                $text = '手绘';
                 break;
             case 4:
                 $text = '企业/品牌设计';
